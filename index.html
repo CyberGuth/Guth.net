@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html id="linewaveBG">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <title>GUTH.NET</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-
-<style>
-body{background-color:rgb(133, 230, 220);
-color:white}
-
-h1{text-align:center;
-  background-color:hotpink;
-  font-size:500%;
-  color:white}
-
-p{font-size:200%;
-text-align:center;}
-</style>
 
   <body>
 <h1>WELCOME TO GUTH.NET</h1>
-<p>YOU'VE ENTERED <b>THe WOrLD WiDe WeB<b> OF ALL THINGS GUTH!!!</p>
-<p>GUTH ISN'T HERE RIGHT NOW. :/</p>
+<p>YOU'VE ENTERED <i><b>THe WOrLD WiDe WeB</b></i> OF ALL THINGS GUTH!!!</p>
+<p>GUTH ISN'T HERE RIGHT NOW :/</p>
 <p>TRY AGAIN LATER, OR SIMPLY LEAVE A MESSAGE AT
   <b>+43-5574-72470</b></p>
 <img src="Gifs/phone.gif" alt="phone" style="align:left">
-<button onclick="audfunction">Call Guth</button>
+<button onclick="playAudio()"
+type="button">Call Guth</button>
+<button onclick="pauseAudio()"
+type="button">Hang Up</button>
 <audio id="voicemail">
-  <source src="Voicemail.mp3" type="audio/mpeg">
+  <source src="Muizzc/Voicemail.mp3" type="audio/mpeg">
   </audio>
   <br>
 <img src="Picpics/SadRingo.jpg" alt="sad ringo starr" width="400">
@@ -56,14 +47,14 @@ text-align:center;}
   <audio controls>
     <source src="Muizzc/TheMidwesternSong.mp3" type="audio/mpeg">
   </audio>
-
-  </body>
-
 <script type="text/javascript">
-let aud = document.getElementById("voicemail");
-function audfunction(){
-  audio.play();
+var x = document.getElementById("voicemail");
+function playAudio(){
+  x.play();
+}
+function pauseAudio(){
+  x.pause();
 }
 </script>
-
+</body>
 </html>
