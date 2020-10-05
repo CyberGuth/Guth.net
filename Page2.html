@@ -7,29 +7,84 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+<div id="MainContainer">
+<div id="ContentContainer">
   <h1>SISKEL AND EBERT REANIMATED</h1>
+
+  <button onclick="playAudio()"
+  type="button">Blast Off</button>
+  <button onclick="pauseAudio()"
+  type="button">Touch Down
+  </button>
+  <audio id="ThemeSongEB" loop>
+  <source src="Muizzc/SE_Intro.mp3" type="audio/mpeg">
+  </audio>
+
+  <p> America's favorive film critics</p>
+  <p> Brought back to life to review the films of today</P>
+
+  <div class="row">
+    <div class="BlueDiv">
+      <img class="SadRingo"src="Gifs/siskelbot.gif" alt="Gene Siskel robot" width="600px">
+      <p>Gene Siskel</p>
+    </div>
+    <div class="PinkDiv">
+      <img class="SadRingo" src="Gifs/Ebert2000.gif" alt="Rodger Ebert robot" width="450px">
+      <p>Rodger Ebert</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="BlueDiv">
+      <img src="Gifs/5.gif" width="300px">
+    </div>
+  <div class="PinkDiv">
+    <iframe class="SadRingo" width="560" height="315" src="https://www.youtube.com/embed/rmnYCSwt2Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="BlueDiv">
+    <img src="Gifs/5.gif" width="300px">
+  </div>
+</div>
+
+<h1>Tenet Review</h1>
+<div class="row">
+  <div class="BlueDiv">
+    <img src=Picpics/TenetPoster.jpg width="250px">
+  </div>
+  <div class="PinkDiv">
+<p><b>Siskel:</b> This film reminds me of my mother, I hated my mother! Much like my feelings toward her, I predict you'll hate this movie. <b><i>TWO THUMBS DOWN</i></b></p>
+    <p><b>Ebert:</b> Tenet, more like <i>to rent</i>. This film is so long it'll have ya screaming "te te today junior!" <b><i>TWO THUMBS DOWN</i></b></p>
+  </div>
+  </div>
+  <br>
+
+  <h1>Mulan Review</h1>
+  <div class="row">
+    <div class="BlueDiv">
+      <img src=Picpics/Mulan.jpg width="250px">
+    </div>
+    <div class="PinkDiv">
+  <p><b>Siskel:</b> I did not see this movie! <b><i>TWO THUMBS DOWN</b></i></p>
+      <p><b>Ebert:</b> I went to see this movie at The Arclight Cinema. I bought to large tubs of popcorn, got food posioning, and spent the entirety of the film on the dumper. <b><i>TWO THUMBS DOWN</b></i></p>
+    </div>
+    </div>
+    <br>
+
   <p>
     To call Guth again click <a href="index.html">HERE</a>
   </p>
-    <img src="Gifs/siskelbot.gif" alt="Gene Siskel robot" width="500px">
-  <img src="Gifs/Ebert2000.gif" alt="Rodger Ebert robot" width="300px">
-  <p> America's favorive film critics</p>
-  <p> Brought back to life to review the films of today</P>
-  <br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rmnYCSwt2Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<img src="Gifs/5.gif" width="300px"
-  <br>
+</div>
+</div>
 
+<script type="text/javascript">
+var x = document.getElementById("ThemeSongEB");
+function playAudio(){
+  x.play();
+}
+function pauseAudio(){
+  x.pause();
+}
+</script>
 
-  <div class="PurpleDiv">
-  Div1
-  </div>
-<div class="YellowDiv">
-    Div2
-  </div>
-  <div class="PurpleDiv">
-    Div3
-  </div>
-  </body>
-
+</body>
 </html>

@@ -1,6 +1,10 @@
 /* CSS Styles */
-
+@@font-face {
+  font-family:BitFont;
+  src: url(BitFont/BitFont-reg.TTF) format('truetype')
+}
 html{
+  font-family:'futura';
   background-color: rgb(21, 244, 247)
 }
 #linewaveBG{
@@ -9,7 +13,6 @@ html{
   -webkit-background-size: cover;
 
 }
-
 #StarTenorBG{
   background: url(../Gifs/StarTenor.gif) no-repeat center center fixed;
   background-size: cover;
@@ -21,37 +24,90 @@ html{
   -webkit-background-size: cover;
 }
 .SadRingo{
-  position:relative;
-  left:30%;
-  right:30%;
-  display:inline-block;
-  border:3
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#links{
+  color:rgb(255, 247, 20);
+  text-decoration: none;
 }
 
 body{
-
+padding:0;
+margin:0;
 color:rgb(255, 247, 10)
 }
 h1{
   text-align:center;
   background-color:hotpink;
   font-size:500%;
-  color:white
+  color:white;
+  margin-top:0px;
+  padding-bottom: 10px;
 }
 p{
   font-size:200%;
 text-align:center;
 }
 
-.YellowDiv{
-  width: 200px;
-  height:200px;
-  color:rgb(255, 247, 10);
-  background: url(../Picpics/bg.png) no-repeat center center fixed;
+#MainContainer{
+  width:100%;
+  height:auto;
+  position:relative;
 }
 
-.PurpleDiv{
-  width:300px;
+#ContentContainer{
+  position: relative;
+  width:1200px;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* flex box stuff */
+.row{
+  height:auto;
+  position: relative;
+  display: flex;
+  flex-wrap:wrap;
+}
+.PinkDiv{
+  position: relative;
+  flex:1;
   height:400px;
-  color:rgb(194, 10, 255)
+  color:rgb(255, 247, 10);
+  background-color:
+}
+
+.BlueDiv{
+  position: relative;
+  flex:1;
+  height:400px;
+  color:rgb(255, 247, 10);
+  background-color:
+}
+
+.RelPos{
+  width:50px;
+  height: 50px;
+  top: 50px;
+  left: 30px;
+  position:relative;
+  background-color: yellow
+}
+
+.AbsPos{
+  position: absolute;
+  width:80px;
+  height:80px;
+  align-items: center;
+}
+
+.FixedPos{
+  position: fixed;
+  top: 40px
+  left:100px
 }
